@@ -1,7 +1,7 @@
 // js/test.js
 
 // ★★★ ここをあなたのデプロイURLに置き換えてください ★★★
-const GAS_URL = 'https://script.google.com/a/macros/stu.hosei.ac.jp/s/AKfycbw-r2QK55wZbOVBmpa1XVSHcLXyAFAV6FisT1HIY2J6OLsaqFCgnEdiKLs2VTiovC7M/exec';
+const GAS_URL = 'https://script.google.com/a/macros/stu.hosei.ac.jp/s/AKfycbxi05bMt4cD6xxfTH26eKxDs9rnFIi8Kj8fpTyYLkm-QE2eWhInxmDIoMQiqyZ2ofw/exec';
 
 // テスト用のパラメータを定義
 const TEST_PARAMS = {
