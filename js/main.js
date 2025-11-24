@@ -1,7 +1,8 @@
 // js/main.js
 
 // ★★★ ここをあなたのGAS Web Appの最新デプロイURLに置き換えてください ★★★
-const GAS_URL = 'https://script.google.com/a/macros/stu.hosei.ac.jp/s/AKfycbxi05bMt4cD6xxfTH26eKxDs9rnFIi8Kj8fpTyYLkm-QE2eWhInxmDIoMQiqyZ2ofw/exec';
+// const GAS_URL = 'https://script.google.com/a/macros/stu.hosei.ac.jp/s/AKfycbxi05bMt4cD6xxfTH26eKxDs9rnFIi8Kj8fpTyYLkm-QE2eWhInxmDIoMQiqyZ2ofw/exec';
+const GAS_URL = 'https://script.google.com/a/macros/stu.hosei.ac.jp/s/AKfycbyMPy7WWPXfoFGqzMd-dofwEtzkTtNsq1bddCXTk9LtoZSZd5bcUbqsK5KVQkF9eQwN/exec';
 
 // 予約する機材IDを定義 (今回はCAM001で固定)
 const EQUIPMENT_ID = 'CAM001';
