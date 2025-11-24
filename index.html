@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>備品予約システム</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>備品予約システム</h1>
+    </header>
+
+    <main>
+        <section class="equipment-info">
+            <h2>機材名: カメラA (<span id="equipment-id">CAM001</span>)</h2>
+            <p>総在庫数: <span id="max-stock">--</span>台</p>
+        </section>
+
+        <section class="calendar-container">
+            <div class="calendar-header">
+                <button id="prev-month">&lt;</button>
+                <h3 id="current-month-year">YYYY年MM月</h3>
+                <button id="next-month">&gt;</button>
+            </div>
+            
+            <div class="calendar" id="calendar-view">
+                </div>
+        </section>
+        
+        <section class="booking-form-area">
+            <h3>予約期間の選択</h3>
+            <p id="selection-status">カレンダーから開始日と終了日を選択してください。</p>
+
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="start-date">貸出開始日:</label>
+                    <input type="text" id="start-date" readonly required>
+                </div>
+                <div class="form-group">
+                    <label for="end-date">返却予定日:</label>
+                    <input type="text" id="end-date" readonly required>
+                </div>
+                <div class="form-group">
+                    <label for="user-name">利用者名:</label>
+                    <input type="text" id="user-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="user-email">連絡先メール:</label>
+                    <input type="email" id="user-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="note">備考:</label>
+                    <textarea id="note"></textarea>
+                </div>
+                
+                <button type="submit" id="submit-booking" disabled>予約を確定する</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
