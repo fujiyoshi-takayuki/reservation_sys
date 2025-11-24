@@ -51,8 +51,13 @@ async function fetchAvailability(date) {
 
     try {
         calendarView.innerHTML = '<div style="grid-column: 1 / 8; padding: 20px;">在庫情報を取得中...</div>';
+        console.log('DBG: Fetching URL:', url); // ★追加ログ1
         const response = await fetch(url);
-        const data = await response.json();
+        console.log('DBG: Response Status:', response.status); // ★追加ログ2
+        const text = await response.text(); // JSONとしてパースする前にテキストで受け取る
+        console.log('DBG: Received Text:', text.substring(0, 200) + '...'); // ★追加ログ3: 受け取った生データを確認
+        const data = JSON.parse(text);
+        // const data = await response.json();
 
         if (data.status === 'success') {
             availabilityData = data.availability;
